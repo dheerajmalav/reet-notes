@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REET Level 2 - Exam Booster</title>
+    <style>
+        :root {
+            --primary: #2c3e50; /* Dark Blue */
+            --accent: #e74c3c; /* Red for Highlighting */
+            --highlight-bg: #fff3cd; /* Yellow highlight */
+            --bg-color: #f4f6f7;
+            --card-bg: #ffffff;
+            --border-radius: 8px;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: #333;
+            margin: 0;
+            padding: 15px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 20px;
+            border-radius: var(--border-radius);
+            text-align: center;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .header h1 { margin: 0; font-size: 1.8rem; }
+        .header p { margin: 5px 0 0; opacity: 0.9; font-size: 0.9rem; }
+
+        .topic-card {
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border-left: 5px solid var(--primary);
+            overflow: hidden;
+        }
+
+        .card-title {
+            background-color: #ecf0f1;
+            padding: 10px 15px;
+            font-weight: bold;
+            color: var(--primary);
+            font-size: 1.1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .badge {
+            background-color: var(--accent);
+            color: white;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+        }
+
+        .points-list {
+            padding: 15px;
+            list-style: none;
+            margin: 0;
+        }
+
+        .points-list li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+            border-bottom: 1px dashed #eee;
+            padding-bottom: 8px;
+        }
+
+        .points-list li:last-child {
+            border-bottom: none;
+        }
+
+        .points-list li::before {
+            content: "✔";
+            color: green;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .imp {
+            font-weight: 600;
+            color: #d35400;
+        }
+
+        .highlight {
+            background-color: var(--highlight-bg);
+            padding: 0 4px;
+            border-radius: 3px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .header h1 { font-size: 1.5rem; }
+        }
+        
+        .exam-tip {
+            background-color: #d4edda;
+            color: #155724;
+            padding: 15px;
+            border-radius: var(--border-radius);
+            border: 1px solid #c3e6cb;
+            margin-top: 30px;
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>REET Level 2 Booster</h1>
+        <p>राजस्थान कला एवं संस्कृति | One Liner Notes</p>
+    </div>
+
+    <div class="topic-card">
+        <div class="card-title">
+            1. लोक देवता & संत <span class="badge">High Weightage</span>
+        </div>
+        <ul class="points-list">
+            <li><strong>रामदेवजी:</strong> 'पीरों के पीर'। एकमात्र लोकदेवता जिन्होंने जीवित समाधि ली और कवि भी थे (ग्रंथ: <span class="highlight">चौबीस बाणियां</span>)।</li>
+            <li><strong>पाबूजी:</strong> ऊंटों के देवता। इनकी फड़ सबसे लोकप्रिय है। वाद्य यंत्र: <span class="imp">रावणहत्था</span>।</li>
+            <li><strong>तेजाजी:</strong> सर्पदंश का इलाज। मुख्य केंद्र: परबतसर (नागौर)। कर्मस्थली: बांसी-दुगारी (बूंदी)।</li>
+            <li><strong>दादू दयाल:</strong> मुख्य पीठ: नरेना (जयपुर)। इनके सत्संग स्थल को <span class="highlight">'अलख दरीबा'</span> कहते हैं।</li>
+            <li><strong>विश्नोई संप्रदाय:</strong> जाम्भोजी द्वारा प्रवर्तित। <span class="imp">29 नियम</span>। पर्यावरण रक्षक।</li>
+        </ul>
+    </div>
+
+    <div class="topic-card">
+        <div class="card-title">
+            2. प्रमुख दुर्ग (स्थापत्य)
+        </div>
+        <ul class="points-list">
+            <li><strong>UNESCO विश्व धरोहर (6 किले):</strong> चीकू-गाजर-आम (चित्तौड़, कुंभलगढ़, गागरोन, जैसलमेर, रणथम्भौर, आमेर)।</li>
+            <li><strong>कुंभलगढ़ (राजसमंद):</strong> अबुल फजल ने कहा- "नीचे से ऊपर देखने पर पगड़ी गिर जाती है"। <span class="highlight">कटारगढ़</span> (मेवाड़ की आँख) इसी में है।</li>
+            <li><strong>गागरोन (झालावाड़):</strong> आहू और कालीसिंध के संगम पर बना सर्वश्रेष्ठ <span class="imp">जल दुर्ग</span>।</li>
+            <li><strong>मेहरानगढ़ (जोधपुर):</strong> चिड़ियाटूंक पहाड़ी पर। मयूरध्वजगढ़। (रुडयार्ड किपलिंग: "परियों और फरिश्तों द्वारा निर्मित")।</li>
+            <li><strong>भटनेर (हनुमानगढ़):</strong> सर्वाधिक विदेशी आक्रमण सहने वाला और सबसे प्राचीन दुर्ग।</li>
+        </ul>
+    </div>
+
+    <div class="topic-card">
+        <div class="card-title">
+            3. आभूषण (Exam Traps) <span class="badge">Tricky</span>
+        </div>
+        <ul class="points-list">
+            <li><strong>सिर/माथा:</strong> मेमंद, शीशफूल, रखड़ी, बोरला।</li>
+            <li><strong>गला:</strong> तिमनिया (Timaniya), मांदलिया, हमेल, चंपाकली।</li>
+            <li><strong>दांत:</strong> <span class="imp">रखन, चूप</span> (Chup)।</li>
+            <li><strong>नाक:</strong> <span class="imp">चोंप</span> (Chonp), बेसरी, भंवरकड़ी।</li>
+            <li><strong>कान:</strong> पीपलपन्ना, अंगोट्या, सुरलिया।</li>
+            <li><strong>कमर:</strong> कंदौरा, सटका।</li>
+        </ul>
+    </div>
+
+    <div class="topic-card">
+        <div class="card-title">
+            4. नृत्य और चित्रकला
+        </div>
+        <ul class="points-list">
+            <li><strong>कालबेलिया:</strong> गुलाबो सपेरा ने विश्व प्रसिद्ध किया। 2010 में <span class="highlight">UNESCO</span> अमूर्त धरोहर सूची में शामिल।</li>
+            <li><strong>गवरी (राई):</strong> भीलों का नृत्य-नाटिका। यह रक्षाबंधन के बाद 40 दिन तक चलता है।</li>
+            <li><strong>तेरहताली:</strong> कामड़ जाति की महिलाएँ (रामदेव जी मेला)। 13 मंजीरों का प्रयोग।</li>
+            <li><strong>किशनगढ़ शैली:</strong> बनी-ठणी (भारत की मोनालिसा)। चित्रकार: निहालचंद। राजा: सावंत सिंह (नागरीदास)।</li>
+            <li><strong>थेवा कला:</strong> प्रतापगढ़ (कांच पर सोने का काम)। नाथूजी सोनी प्रवर्तक।</li>
+        </ul>
+    </div>
+
+    <div class="topic-card">
+        <div class="card-title">
+            5. प्रमुख साहित्य (Matching Qs)
+        </div>
+        <table>
+            <tr>
+                <th>पुस्तक/रचना</th>
+                <th>लेखक</th>
+            </tr>
+            <tr>
+                <td>पृथ्वीराज रासो</td>
+                <td>चंदबरदाई</td>
+            </tr>
+            <tr>
+                <td>वेली क्रिसन रुकमणी री</td>
+                <td>पृथ्वीराज राठौड़ (पीथल)</td>
+            </tr>
+            <tr>
+                <td>बातारी फुलवारी</td>
+                <td>विजयदान देथा (विज्जी)</td>
+            </tr>
+            <tr>
+                <td>चेतावनी रा चूंग्टिया</td>
+                <td>केसरी सिंह बारहठ</td>
+            </tr>
+            <tr>
+                <td>कुवलयमाला</td>
+                <td>उद्योतन सूरी</td>
+            </tr>
+        </table>
+    </div>
+
+     <div class="topic-card">
+        <div class="card-title">
+            6. REET Special (Mix Facts)
+        </div>
+        <ul class="points-list">
+            <li><strong>आदिवासियों का कुंभ:</strong> बेणेश्वर धाम (डूंगरपुर)। सोम-माही-जाखम संगम। माघ पूर्णिमा।</li>
+            <li><strong>गुलाबी ओढ़नी:</strong> पुत्री जन्म पर। <strong>पीला पोमचा:</strong> पुत्र जन्म पर।</li>
+            <li><strong>थेपड़ा/थापा:</strong> गोबर से बनाई गई कलाकृतियां।</li>
+            <li><strong>राजस्थान का जिब्राल्टर:</strong> तारागढ़ (अजमेर)।</li>
+            <li><strong>84 खम्भों की छतरी:</strong> बूंदी। <strong>80 खम्भों की छतरी:</strong> अलवर।</li>
+        </ul>
+    </div>
+
+    <div class="exam-tip">
+        <strong>💡 Exam Tip:</strong> REET में 'नहीं है' (Not) वाले प्रश्नों को ध्यान से पढ़ें। आभूषण और दुर्गों के मिलान वाले प्रश्न (Matching Type) सबसे ज्यादा स्कोरिंग होते हैं, इन्हें एलिमिनेशन मेथड (Elimination Method) से हल करें।
+    </div>
+
+</div>
+
+</body>
+</html>
